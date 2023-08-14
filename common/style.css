@@ -262,7 +262,7 @@ header {
         top: 100%;
         right: -100%;
         width: 50%;
-        height: 30vh;
+        height: /*30vh*/ 335%;
         /* background-color: rgba(70, 70, 70, 0.8);
         backdrop-filter: saturate(180%) blur(60px); */
         background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
@@ -282,9 +282,17 @@ header {
     .navbar a {
         display: block;
         margin: 12px 0;
-        padding: 0px 25px;
+        padding: 0px 20px;
         transition: all .50s ease;
     }
+
+    .lightmode header .navbar a {
+        display: block;
+        margin: 12px 0;
+        padding: 0px 20px;
+        transition: all .50s ease;
+    }
+
     .navbar a:hover {
         color: var(--main-color);
         transform: translateY(5px);

@@ -13,12 +13,23 @@ menu.onclick = () => {
     navbar.classList.toggle('open');
 }
 
-let light = document.querySelector('.light');
+let light = document.querySelector('#light');
 
 light.addEventListener('click',function(){
     body.classList.toggle('lightmode');
     // document.getElementById('light').innerHTML = 'Sötét mód';
     localStorage.setItem("light",body.classList);
-    // document.querySelector('.light').innerHTML = body.classList.contains('lightmode')? 'Sötét mód':'Világos mód';
-    document.querySelector('.light').innerHTML = body.classList.contains('lightmode')? 'Dark mode':'Light mode';
+    document.querySelector('#light').innerHTML = body.classList.contains('lightmode')? '<i class="ri-moon-fill"></i>Dark mode':'<i class="ri-sun-fill"></i>Light mode';
+    // document.querySelector('.light').innerHTML = body.classList.contains('lightmode')? 'Dark mode':'Light mode';
 });
+
+let light2 = document.querySelector('.mode-mob');
+
+light2.addEventListener('click', function(){
+    body.classList.toggle('lightmode');
+    // document.getElementById('light').innerHTML = 'Sötét mód';
+    localStorage.setItem("light",body.classList);
+    document.querySelector('.mode-mob').innerHTML = body.classList.contains('lightmode')? '<i class="ri-moon-fill"></i>':'<i class="ri-sun-fill"></i>';
+    // document.querySelector('.light').innerHTML = body.classList.contains('lightmode')? 'Dark mode':'Light mode';
+});
+

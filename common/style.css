@@ -381,6 +381,22 @@ header {
     color: var(--text-color);
 }
 
+.lightmode .grid > div a > .button{
+    color: var(--text-color);
+}
+
+.lightmode .grid > div a > .button:hover{
+    color: var(--bg-color);
+}
+
+.lightmode .grid > div a > .button2{
+    color: var(--text-color);
+}
+
+.lightmode .grid > div a > .button2:hover{
+    color: var(--bg-color);
+}
+
 .button2 {
     border: none;
     background-color: #292dfd;
@@ -525,6 +541,7 @@ header {
         font-size: 28px;
         margin-right: 2px;
     }
+    
 
     .grid > div {
         font-size: 24px;

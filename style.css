@@ -3,6 +3,14 @@
   font-size: inherit;
 }
 
+.lightmode {
+  background-color: #fff;
+}
+
+.lightmode > .scene > .cube-wrapper > .cube > .cube-faces > .cube-face {
+  border: solid 1px #fff;
+}
+
 body {
   background-color: /*#ff8484ff*/ #222327;
   height: 100vh;

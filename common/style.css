@@ -254,6 +254,11 @@ header {
     background-color: var(--text-color);
 }
 
+.lightmode > .grid2 > div{
+    color: var(--bg-color);
+    background-color: var(--text-color);
+}
+
 .grid{
     display: grid;
     /* grid-template-rows: ; */
@@ -273,6 +278,32 @@ header {
 }
 
 .grid > div {
+    background-color: var(--bg-color);
+    
+    color: var(--text-color);
+    font-size: 32px;
+    transition: all .50s ease;
+}
+
+.grid2 {
+    display: grid;
+    /* grid-template-rows: ; */
+    grid-template-columns: 25% 25%;
+    grid-gap: 0.5vh;
+    /* background-color: #2196F3; */
+    position: fixed;
+    top: 40%;
+    right: 5%;
+    width: 90%;
+    /* transform: translateY(-50%); */
+    /* justify-content: center; */
+    align-items: center;
+    padding: 1%;
+    margin-top: 2%;
+    transition: all .50s ease;
+}
+
+.grid2 > div {
     background-color: var(--bg-color);
     
     color: var(--text-color);
@@ -340,8 +371,41 @@ header {
     grid-row-start: 2;
     grid-row-end: 10;
     grid-column-start: 5;
-    grid-column-end: 7;
+    grid-column-end: 6;
     /* padding: 20px 12%; */
+}
+
+.item7 {
+    grid-row-start: 2;
+    grid-row-end: 10;
+    grid-column-start: 3;
+    grid-column-end: 6;
+    text-align: justify;
+    /* padding: 20px 12%; */
+}
+.item8 {
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    text-align: center;
+    /* padding: 20px 12%; */
+}
+.item8 > p {
+    font-size: 24px;
+}
+.item8 > a {
+    font-size: 24px;
+    color: var(--main-color);
+    transition: all .50s ease;
+}
+.item8 > a:hover {
+    color: var(--text-color);
+    transition: all .50s ease;
+}
+
+.lightmode > .grid > .item8 > a:hover {
+    color: var(--bg-color);
 }
 
 /* .grid {
@@ -394,6 +458,22 @@ header {
 }
 
 .lightmode .grid > div a > .button2:hover{
+    color: var(--bg-color);
+}
+
+.lightmode .grid2 > div a > .button{
+    color: var(--text-color);
+}
+
+.lightmode .grid2 > div a > .button:hover{
+    color: var(--bg-color);
+}
+
+.lightmode .grid2 > div a > .button2{
+    color: var(--text-color);
+}
+
+.lightmode .grid2 > div a > .button2:hover{
     color: var(--bg-color);
 }
 
@@ -546,6 +626,13 @@ header {
     .grid > div {
         font-size: 24px;
     }
+    .grid2 {
+        top: 60%;
+    }
+
+    .grid2 > div {
+        font-size: 24px;
+    }
     .item4 {
         grid-row-start: 10;
         grid-row-end: 15;
@@ -566,6 +653,14 @@ header {
     .item6 {
         grid-row-start: 20;
         grid-row-end: 25;
+        grid-column-start: 1;
+        grid-column-end: 7;
+        padding: 10px 12%;
+        text-align: center;
+    }
+    .item7 {
+        grid-row-start: 15;
+        grid-row-end: 20;
         grid-column-start: 1;
         grid-column-end: 7;
         padding: 10px 12%;
